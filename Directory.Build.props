@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <Project>
   <PropertyGroup>
     <Nullable>enable</Nullable>
@@ -16,7 +16,7 @@
     <NuGetAuditMode>all</NuGetAuditMode>
 
     <!-- MAUI Specific -->
-    <MauiPackageVersion>9.0.80</MauiPackageVersion>
+    <MauiPackageVersion>9.0.90</MauiPackageVersion>
     <NextMauiPackageVersion>10.0.0</NextMauiPackageVersion>
     <MauiStrictXamlCompilation>true</MauiStrictXamlCompilation>
     <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
@@ -233,8 +233,8 @@
 
   <ItemGroup>
     <SupportedPlatform Include="Tizen" />
-    <InternalsVisibleTo Include="CommunityToolkit.Maui.UnitTests"/>
-    <InternalsVisibleTo Include="CommunityToolkit.Maui.Analyzers.UnitTests"/>
+    <InternalsVisibleTo Include="CommunityToolkit.Maui.UnitTests" />
+    <InternalsVisibleTo Include="CommunityToolkit.Maui.Analyzers.UnitTests" />
   </ItemGroup>
 
   <PropertyGroup Condition="('$(TF_BUILD)' == 'true' OR '$(GITHUB_ACTIONS)' == 'true') and $([MSBuild]::IsOSPlatform('windows')) == 'true'">
